@@ -1,0 +1,698 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"th",
+				"th"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"nav",
+				"navbar-brand"
+			],
+			[
+				"container",
+				"container-fluid"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"in",
+				"inline-flex"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"line",
+				"linear-gradient()"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"backgrou",
+				"background"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"sl",
+				"silver"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"blue",
+				"skyblue"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"backgound",
+				"background-size"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"blu",
+				"skyblue"
+			],
+			[
+				"slat",
+				"slategray"
+			],
+			[
+				"b",
+				"button"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"affichpro",
+				"affichprodprix"
+			],
+			[
+				"aff",
+				"affichProdPrix"
+			],
+			[
+				"acc",
+				"accueil"
+			],
+			[
+				"gr",
+				"seagreen"
+			],
+			[
+				"gre",
+				"limegreen"
+			],
+			[
+				"che",
+				"check"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"green",
+				"seagreen"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"li",
+				"li"
+			],
+			[
+				"container-",
+				"container-fluid"
+			],
+			[
+				"Bd",
+				"Bdpartenaire"
+			],
+			[
+				"id",
+				"id_partenaire"
+			],
+			[
+				"affich",
+				"affichpartenaires"
+			],
+			[
+				"heade",
+				"header()"
+			],
+			[
+				"an",
+				"Annuler"
+			],
+			[
+				"re",
+				"recupx"
+			],
+			[
+				"isse",
+				"isset()"
+			],
+			[
+				"sessio",
+				"session_start()"
+			],
+			[
+				"SESSIO",
+				"session_start()"
+			],
+			[
+				"recup",
+				"recupNomUtil"
+			],
+			[
+				"_",
+				"$_SESSION"
+			],
+			[
+				"BD",
+				"BDNomUt"
+			],
+			[
+				"uc",
+				"ucfirst()"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"val",
+				"val4"
+			],
+			[
+				"gett",
+				"gettype()"
+			],
+			[
+				"echo",
+				"echo()"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"fonts",
+				"font-style"
+			],
+			[
+				"a",
+				"sans-serif"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"gray",
+				"dimgray"
+			],
+			[
+				"inline-",
+				"inline-flex"
+			],
+			[
+				"list-styl",
+				"list-style"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"border-",
+				"border-radius\tproperty"
+			],
+			[
+				"list",
+				"list-style\tproperty"
+			],
+			[
+				"ville",
+				"Veillez"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"space-",
+				"space-between\talign-content"
+			],
+			[
+				"text-tra",
+				"text-transform\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"h",
+				"h1\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/menu.php",
+			"settings":
+			{
+				"buffer_size": 450,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/Xampp/htdocs/GestionPresence/pages/menu.php",
+		"/C/xampp/Xampp/htdocs/creative-agency-website-template/index.html",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/medecin.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/infirmerie.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/corbeille.php",
+		"/C/xampp/Xampp/htdocs/Practise/index.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/utilisateurs.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/index.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/index.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/menustyle.css",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/menu.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/administration.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/modutilisateurs.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/modservice.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/modmedicamet.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/modmed.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/footer.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/acceuil1.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/ajinfirmier.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/ajmedecin.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/modinf.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/ajutilisateurs.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/ajservice.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/ajmedicament.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/footer.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/footstyle.css",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/actualite.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/prise-rdv.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/contactez-nous.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/pharmacie.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/service.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/style.css",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/menu.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/menustyle.css",
+		"/C/xampp/Xampp/htdocs/WebSiteDynamic/menucss.css",
+		"/C/xampp/Xampp/htdocs/WebSiteDynamic/menu.php",
+		"/C/xampp/Xampp/htdocs/WebSiteDynamic/style.css",
+		"/C/xampp/Xampp/htdocs/WebSiteDynamic/Index.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/medecin.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/partenaires.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/infirmieres.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/prise_de_RndV.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/AjoutMedecin.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/AjoutPartenaires.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/AjoutInfirmieres.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Actualites.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/calculFactoriel.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Administration.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/contacter_nous.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/service.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/menu.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/index.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/modifInfirmiers.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/ModifPartenaires.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/modifMedicin.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/AjoutActualite.php",
+		"/C/xampp/Xampp/htdocs/Site web dynamique/Admin/AjoutService.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/acceuil.php",
+		"/C/xampp/Xampp/htdocs/2098_health/index.html",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/prise1-rdv.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/pharmacie.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/service.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/acceuil.php",
+		"/C/xampp/Xampp/htdocs/Site-web-dynamique/Admin/medecin.php",
+		"/C/xampp/Xampp/htdocs/SiteWebDynamique/foot.php",
+		"/C/xampp/Xampp/htdocs/SiteWebDynamique/css/styleMenu.css",
+		"/C/xampp/Xampp/htdocs/SiteWebDynamique/menu.php",
+		"/C/xampp/Xampp/htdocs/SiteWebDynamique/index.php",
+		"/C/xampp/Xampp/htdocs/SiteWebDynamique/css/styleFoot.css",
+		"/C/xampp/Xampp/htdocs/SiteWebDynamique/css/style.css",
+		"/C/xampp/htdocs/elam1/pages/accueil.php",
+		"/C/xampp/htdocs/elam1/includes/menu.php",
+		"/C/xampp/htdocs/elam1/Admin/containerstyle.css",
+		"/C/xampp/htdocs/elam1/assets/css/containerstyle.css",
+		"/C/xampp/htdocs/elam1/assets/css/form_style.css",
+		"/C/xampp/htdocs/creative-agency-website-template/css/style.css",
+		"/C/xampp/htdocs/Site web dynamique/Admin/AjoutService.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/AjoutUtilisateur.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/AjoutInfirmiers.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/prise_rendez_vous.php",
+		"/C/xampp/htdocs/Site web dynamique/prise_rendez_vous.php",
+		"/C/xampp/htdocs/Site web dynamique/medecin.php",
+		"/C/xampp/htdocs/Site web dynamique/partenaires.php",
+		"/C/xampp/htdocs/Site web dynamique/infirmiers.php",
+		"/C/xampp/htdocs/Site web dynamique/menu.php",
+		"/C/xampp/htdocs/elam1/Admin/utilisateur.php",
+		"/C/xampp/htdocs/elam1/Admin/modifProduitPrix.php",
+		"/C/xampp/htdocs/elam1/Admin/produitsprix.php",
+		"/C/xampp/htdocs/elam1/Admin/AjoutProdPrix.php",
+		"/C/xampp/htdocs/elam1/Admin/voircommande.php",
+		"/C/xampp/htdocs/elam1/pages/commande.php",
+		"/C/xampp/htdocs/elam1/pages/produitsprix.php",
+		"/C/xampp/htdocs/elam1/Admin/administration.php",
+		"/C/xampp/htdocs/elam1/Admin/accueil.php",
+		"/C/xampp/htdocs/elam1/Admin/menu.php",
+		"/C/xampp/htdocs/elam1/pages/index1.php",
+		"/C/xampp/htdocs/elam1/assets/css/menustyle.css",
+		"/C/xampp/htdocs/elam1/pages/index.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/AjoutPartenaires.php",
+		"/C/xampp/htdocs/Site web dynamique/medicaments.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/AjoutMedicament.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/modifPartenaires.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/partenaires.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/Connection.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/modifInfirmieres.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/AjoutMedecin.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/modifMedecins.php",
+		"/C/xampp/htdocs/Site web dynamique/CalculFactoriel.php",
+		"/C/xampp/htdocs/elam1/pages/deconnection.php",
+		"/C/xampp/htdocs/Site web dynamique/Admin/administration.php",
+		"/C/xampp/htdocs/creative-agency-website-template/contact.html",
+		"/C/xampp/htdocs/creative-agency-website-template/index.html",
+		"/C/xampp/htdocs/Site web dynamique/Admin/index.php",
+		"/C/xampp/htdocs/Site web dynamique/css1/style_dynamique.css",
+		"/C/xampp/htdocs/Site web dynamique/Admin/menu.php",
+		"/C/xampp/htdocs/Site web dynamique/Calculator.php",
+		"/C/xampp/htdocs/Site web dynamique/Corrections.php",
+		"/C/xampp/htdocs/Exercices/Accueil.php",
+		"/C/xampp/htdocs/exercice/styleexo.css",
+		"/C/xampp/htdocs/Exercices/exercice.php",
+		"/C/xampp/htdocs/Exercices/correction.php",
+		"/C/xampp/htdocs/exercice/exercices.php",
+		"/C/xampp/htdocs/exercice/pgcd.php",
+		"/C/xampp/htdocs/exercice/tva.php",
+		"/C/xampp/htdocs/Site web dynamique/styleexo.css",
+		"/C/xampp/htdocs/Exercices/menuexo.php",
+		"/C/xampp/htdocs/exercice/cssmenu.css",
+		"/C/xampp/htdocs/Site web dynamique/Solution_comparaison.php"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pages/menu.php",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 49.6
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 44.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

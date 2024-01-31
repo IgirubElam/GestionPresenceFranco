@@ -1,0 +1,27 @@
+.margintop{
+	margin-top: 60px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.show-old-pwd,.show-new-pwd {
+    position: absolute;
+    top: 0px;
+    right: -35px;
+}
+
+.glyphicon-ok-blue {
+    color: blue;
+}
+
+.navbar {
+
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+}
