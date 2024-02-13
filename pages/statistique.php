@@ -9,9 +9,28 @@
 	}
 	require('fonction.php');
 
-	$requete="select * from choriste where Type_choriste = 'Effectif' ";
-	
-	$resultat=$BaseDonnee->query($requete);
+	$nameR = isset($_GET['nameR']) ? $_GET['nameR'] : "";
+	$type = isset($_GET['type'])?$_GET['type']:"all";
+    $page = isset($_GET['page']) ? $_GET['page'] : 1;
+    $records_per_page = 10; // Nombre d'enregistrements par page
+
+    $start_from = ($page - 1) * $records_per_page; // Calculer le point de départ pour la requête LIMIT
+
+    if ($type == "all") {
+        $requete = "SELECT * FROM choriste WHERE Nom LIKE '%$nameR%' OR Prenom LIKE '%$nameR%'";
+        $requeteCount = "SELECT COUNT(*) countC FROM choriste WHERE Nom LIKE '%$nameR%' OR Prenom LIKE '%$nameR%'";
+    } else {
+        $requete = "SELECT * FROM choriste WHERE (Nom LIKE '%$nameR%' OR Prenom LIKE '%$nameR%') AND Type_choriste = '$type'";
+        $requeteCount = "SELECT COUNT(*) countC FROM choriste WHERE (Nom LIKE '%$nameR%' OR Prenom LIKE '%$nameR%') AND Type_choriste = '$type'";
+    }
+
+    $total_records = $BaseDonnee->query($requeteCount)->fetch()['countC']; // Nombre total d'enregistrements
+
+    $total_pages = ceil($total_records / $records_per_page); // Nombre total de pages
+
+    $requete .= " LIMIT $start_from, $records_per_page"; // Ajouter la clause LIMIT à la requête
+
+    $resultat = $BaseDonnee->query($requete);
 
 
 	$requete1="select distinct Id_activite,Nom_type_activite  from type_activite,appel where type_activite.Id_activite =appel.Id_type_activite";
@@ -39,27 +58,20 @@
 	<?php include("menu.php"); ?>
 
 	<div class="container">
-		
-		<!-- <div class="panel panel-success margintop">
-			<div class="panel-heading"> Liste des presences</div>
-			<div class="panel-body">
-			
-				<?php while($type_act = $resultat1->fetch()){ ?>	
-				<button type="button" class="btn btn-primary btn_type_activite" id-type-activite="<?php echo $type_act['Id_activite'];?>"><?php echo $type_act['Nom_type_activite'] ?></button>
-				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
-				<?php } ?>
-					
-				
-			</div>
-		</div> -->
 
 		<center>
 		<form class="form-inline">
 			<div class="form-group">
 						<input type="text" name="nameR" placeholder="Le nom du choriste" autocomplete="off" class="form-control">
-					</div>
-							
+			</div>
+			<div class="form-group">
+                <label for="type">Type choriste:</label>
+                <select name="type" class="form-control" id="type">
+                    <option value="all" <?php if($type === "all") echo "selected"; ?>>Tous les choristes</option>
+                    <option value="Effectif" <?php if($type === "Effectif") echo "selected"; ?>>Effectif</option>
+                    <option value="Candidat" <?php if($type === "Candidat") echo "selected"; ?>>Candidat</option>
+                </select>
+            </div>		
 			<button type="submit" class="btn btn-success"> 
 				<span class="glyphicon glyphicon-search"></span> 
 					Chercher...
@@ -101,8 +113,16 @@
 						</tbody>
 			</table>
 
-			<center><button type="button" class="btn btn-dark btn-sm mb-2" onclick="window.print()"> <i class="fas fa-print"></i> Imprimer </button></center>
+			<center><button type="button" class="btn btn-success btn-sm mb-2" onclick="window.print()"> <i class="fas fa-print"></i> Imprimer </button></center>
 		</div>
+			<ul class="pagination">
+	            <?php
+	                // Affichage des liens de pagination
+	                for ($i = 1; $i <= $total_pages; $i++) {
+	                    echo "<li><a href='statistique.php?page=".$i."&nameR=".$nameR."&type=".$type."'>".$i."</a></li>";
+	                }
+	            ?>
+	        </ul>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popped.min.js"></script>

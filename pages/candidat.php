@@ -9,9 +9,20 @@
 	}
 	require('fonction.php');
 
-	$requete="select * from choriste where Type_choriste = 'Candidat' ";
-	
-	$resultat=$BaseDonnee->query($requete);
+	$nameR = isset($_GET['nameR']) ? $_GET['nameR'] : "";
+    $page = isset($_GET['page']) ? $_GET['page'] : 1;
+    $records_per_page = 10; // Nombre d'enregistrements par page
+
+    $start_from = ($page - 1) * $records_per_page; // Calculer le point de départ pour la requête LIMIT
+
+    $requete = "SELECT * FROM choriste WHERE Nom LIKE '%$nameR%' OR Prenom LIKE '%$nameR%'";
+    $total_records = $BaseDonnee->query($requete)->rowCount(); // Nombre total d'enregistrements
+
+    $total_pages = ceil($total_records / $records_per_page); // Nombre total de pages
+
+    $requete .= " LIMIT $start_from, $records_per_page"; // Ajouter la clause LIMIT à la requête
+
+    $resultat = $BaseDonnee->query($requete);
 
 
 	$requete1="select distinct Id_activite,Nom_type_activite  from type_activite,appel where type_activite.Id_activite =appel.Id_type_activite";
@@ -39,20 +50,6 @@
 	<?php include("menu.php"); ?>
 
 	<div class="container">
-		
-		<!-- <div class="panel panel-success margintop">
-			<div class="panel-heading"> Liste des presences</div>
-			<div class="panel-body">
-			
-				<?php while($type_act = $resultat1->fetch()){ ?>	
-				<button type="button" class="btn btn-primary btn_type_activite" id-type-activite="<?php echo $type_act['Id_activite'];?>"><?php echo $type_act['Nom_type_activite'] ?></button>
-				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
-				<?php } ?>
-					
-				
-			</div>
-		</div> -->
 
 		<center>
 		<form class="form-inline">
@@ -103,6 +100,14 @@
 
 			<center><button type="button" class="btn btn-success btn-sm mb-2" onclick="window.print()"> <i class="fas fa-print"></i> Imprimer </button></center>
 		</div>
+			<ul class="pagination">
+	            <?php
+	                // Affichage des liens de pagination
+	                for ($i = 1; $i <= $total_pages; $i++) {
+	                    echo "<li><a href='candidat.php?page=".$i."&nameR=".$nameR."'>".$i."</a></li>";
+	                }
+	            ?>
+	        </ul>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popped.min.js"></script>

@@ -8,10 +8,29 @@
 	}
 	require('fonction.php');
 
+	$nameR = isset($_GET['nameR'])?$_GET['nameR']:"";
+
+	$start_date = isset($_GET['start_date']) ? $_GET['start_date'] : "";
+	$end_date = isset($_GET['end_date']) ? $_GET['end_date'] : "";
+
 	$sql = "select distinct Id_activite,Nom_type_activite  from type_activite,appel where type_activite.Id_activite =appel.Id_type_activite";
 	$resultat = $BaseDonnee->query($sql);
 
-	$requete="select * from  absence,appel,type_activite,choriste where absence.Id_appel=appel.Id_appel AND appel.Id_type_activite =type_activite.Id_activite AND absence.Id_choriste=choriste.Id_choriste";
+	$requete = "SELECT * FROM absence, appel, type_activite, choriste 
+            WHERE absence.Id_appel = appel.Id_appel 
+            AND appel.Id_type_activite = type_activite.Id_activite 
+            AND absence.Id_choriste = choriste.Id_choriste";
+
+   if (!empty($start_date) && !empty($end_date)) {
+	    $start_date = date('Y-m-d', strtotime($start_date));
+	    $end_date = date('Y-m-d', strtotime($end_date));
+	    $requete .= " AND appel.Date BETWEEN '$start_date' AND '$end_date'";
+	}
+
+	if (!empty($nameR)) {
+	    $requete .= " AND choriste.Nom LIKE '%$nameR%'";
+	}
+
 	$resultat_absences=$BaseDonnee->query($requete);
 
 ?>
@@ -49,15 +68,22 @@
 		</div>
 
 		<center>
-		<form class="form-inline">
-			<div class="form-group">
-						<input type="text" name="nameR" placeholder="Le nom du choriste" autocomplete="off" class="form-control">
-					</div>
-							
-			<button type="submit" class="btn btn-success"> 
-				<span class="glyphicon glyphicon-search"></span> 
-					Chercher...
-			</button>
+		<form class="form-inline" method="GET">
+		    <div class="form-group">
+		        <label for="start_date">Date de début:</label>
+		        <input type="date" name="start_date" class="form-control">
+		    </div>
+		    <div class="form-group">
+		        <label for="end_date">Date de fin:</label>
+		        <input type="date" name="end_date" class="form-control">
+		    </div>
+		    <div class="form-group">
+		        <input type="text" name="nameR" placeholder="Le nom du choriste" autocomplete="off" class="form-control">
+		    </div>
+		    <button type="submit" class="btn btn-success"> 
+		        <span class="glyphicon glyphicon-search"></span> 
+		        Chercher...
+		    </button>
 		</form>
 		</center>
 		&nbsp &nbsp;

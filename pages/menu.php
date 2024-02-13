@@ -62,18 +62,7 @@
 								</ul>
 							</li>
 
-							<li class="dropdown nav-item">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Statistique</a>
-								<ul class="dropdown-menu dropdown-menu-dark">
-
-									<?php if($_SESSION['is_admin']==1){?>
-									<li><a class="dropdown-item" href="statistique.php">Effectif</a></li>
-									<?php }?>
-									<?php if($_SESSION['is_admin']==1){?>
-									<li><a class="dropdown-item" href="candidat.php">Candidat</a></li>
-									<?php }?>
-								</ul>
-							</li>
+							<li class="nav-item mx-2"><a class="nav-link" href="statistique.php">Statistique</a></li>
 
 	
 						<div class="d-flex justify-content-center align-items-center gap-3">
@@ -90,84 +79,6 @@
     </div>
   </div>
 </nav>
-
-
-
-
-	
-
-	<!-- <header>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-
-			<div class="container-fluid">	
-				<div class="navbar-header">
-					<a href="" class="navbar-brand">CHORALE FRANCOPHONE</a>	
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
-
-							<?php if($_SESSION['is_admin']==1){?>
-							<li class="nav-item"><a class="nav-link" href="choriste.php">Choriste</a></li>
-						    <?php }?>
-
-						    <?php if($_SESSION['is_admin']==1){?>
-							<li class="nav-item"><a class="nav-link" href="listeAppel.php">Liste des Appels</a></li>
-							<?php }?>
-
-							<?php if($_SESSION['is_admin']==1){?>
-							<li class="nav-item"><a class="nav-link" href="typeActivite.php">Type activite</a></li>
-							<?php }?>
-
-							<li class="dropdown nav-item">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Presence
-									<span class="caret"></span></a>
-								<ul class="dropdown-menu nav-item">
-
-									<?php if($_SESSION['is_admin']==1){?>
-									<li><a href="listePresence.php">Listes des presences</a></li>
-									<?php }?>
-
-									<li><a href="mesPresences.php">Mes presences</a></li>
-								</ul>
-							</li>
-							<li class="dropdown nav-item">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Absence 
-									<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-
-									<?php if($_SESSION['is_admin']==1){?>
-									<li><a href="listeAbsence.php">Listes des absences</a></li>
-									<?php }?>
-
-									<li><a href="mesAbsences.php">Mes absences</a></li>
-								</ul>
-							</li>
-
-							<?php if($_SESSION['is_admin']==1){?>
-							<li class="nav-item"><a class="nav-link" href="statistique.php">Statistique</a></li>
-							<?php }?>
-						</ul>
-
-						<div class="bx bx-menu" id="menu-icon"></div>
-
-						
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown nav-item">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-user"></i><?php echo ' '.$_SESSION['nom'].' '.$_SESSION['prenom']?> <span class="caret"></span></a>
-
-								<ul class="dropdown-menu">
-									<li><a href="utilisateur.php"><i class="glyphicon glyphicon-log-in"></i> Mon compte</a></li>
-									<li><a href="seDeconnecter.php"><i class="glyphicon glyphicon-log-out"></i> Se deconnecter</a></li>
-								</ul>	
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav> 
-	</header> -->
 
 
 </body>

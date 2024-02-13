@@ -32,21 +32,7 @@
 	<?php include("menu.php"); ?>
 
 	<div class="container">
-		<div class="panel panel-success margintop">
-			<div class="panel-heading"> Recherche des choristes</div>
-			<div class="panel-body">
-				<form method="get" action="choriste.php" class="form-inline">
-					<div class="form-group">
-						<input type="text" name="nameR" placeholder="Le nom du choriste" autocomplete="off" class="form-control">
-					</div>
-						
-						<button type="submit" class="btn btn-success"> 
-							<span class="glyphicon glyphicon-search"></span> 
-							 Chercher...
-						</button>
-				</form>
-			</div>
-		</div>
+		
 		<div class="panel panel-primary">
 			<div class="panel-heading"> Liste des choristes</div>
 			<div class="panel-body">

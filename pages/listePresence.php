@@ -10,10 +10,27 @@
 
 	$nameR = isset($_GET['nameR'])?$_GET['nameR']:"";
 
-	$sql = "select distinct Id_activite,Nom_type_activite  from type_activite,appel where type_activite.Id_activite =appel.Id_type_activite";
+	$start_date = isset($_GET['start_date']) ? $_GET['start_date'] : "";
+	$end_date = isset($_GET['end_date']) ? $_GET['end_date'] : "";
+
+	$sql = "select distinct Id_activite,Nom_type_activite from type_activite,appel where type_activite.Id_activite =appel.Id_type_activite";
 	$resultat = $BaseDonnee->query($sql);
 
-	$requete="select * from  presence,appel,type_activite,choriste where presence.Id_appel=appel.Id_appel AND appel.Id_type_activite =type_activite.Id_activite AND presence.Id_choriste=choriste.Id_choriste";
+	$requete = "SELECT * FROM presence, appel, type_activite, choriste 
+            WHERE presence.Id_appel = appel.Id_appel 
+            AND appel.Id_type_activite = type_activite.Id_activite 
+            AND presence.Id_choriste = choriste.Id_choriste";
+
+   if (!empty($start_date) && !empty($end_date)) {
+	    $start_date = date('Y-m-d', strtotime($start_date));
+	    $end_date = date('Y-m-d', strtotime($end_date));
+	    $requete .= " AND appel.Date BETWEEN '$start_date' AND '$end_date'";
+	}
+
+	if (!empty($nameR)) {
+	    $requete .= " AND choriste.Nom LIKE '%$nameR%'";
+	}
+	
 	$resultat_presences=$BaseDonnee->query($requete);
 
 ?>
@@ -51,16 +68,24 @@
 		</div>
 
 		<center>
-		<form class="form-inline">
-			<div class="form-group">
-						<input type="text" name="nameR" placeholder="Le nom du choriste" autocomplete="off" class="form-control">
-					</div>
-							
-			<button type="submit" class="btn btn-success"> 
-				<span class="glyphicon glyphicon-search"></span> 
-					Chercher...
-			</button>
+		<form class="form-inline" method="GET">
+		    <div class="form-group">
+		        <label for="start_date">Date de début:</label>
+		        <input type="date" name="start_date" class="form-control">
+		    </div>
+		    <div class="form-group">
+		        <label for="end_date">Date de fin:</label>
+		        <input type="date" name="end_date" class="form-control">
+		    </div>
+		    <div class="form-group">
+		        <input type="text" name="nameR" placeholder="Le nom du choriste" autocomplete="off" class="form-control">
+		    </div>
+		    <button type="submit" class="btn btn-success"> 
+		        <span class="glyphicon glyphicon-search"></span> 
+		        Chercher...
+		    </button>
 		</form>
+
 		</center>
 		&nbsp &nbsp;
 		<div class="append_div">
@@ -144,51 +169,6 @@
 
 			
 	   });
-
-
-		
-	</script>
-
-
-	<script type="text/javascript">
-		
-		// $(".activite").click(function(e){
-
-		// 	var id_activite = $(this).attr("data_id_activite");
-
-		// 	$.ajax({
-
-		// 		url:  AfficherPresence(id_activite),
-		// 		type: 'post',
-		// 		success:function(responsedata){
-		// 			$('#response').html(responsedata);
-		// 		}
-
-		// 	});
-
-		// $('#culte').click(function(){
-		// 	$.ajax({
-
-		// 		url: 'get_culte_presence.php',
-		// 		type: 'post',
-		// 		success:function(responsedata){
-		// 			$('#response').html(responsedata);
-		// 		}
-
-		// 	});
-		// });
-
-		// $('#priere').click(function(){
-		// 	$.ajax({
-
-		// 		url: 'get_pri_presence.php',
-		// 		type: 'post',
-		// 		success:function(responsedata){
-		// 			$('#response').html(responsedata);
-		// 		}
-
-		// 	});
-		// });
 
 
 		

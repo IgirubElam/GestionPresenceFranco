@@ -14,7 +14,7 @@
 		$dateAppel = $_POST['date'];
 		$admin = $_POST['admin'];
 
-		$requete = "insert into appel(`Id_type_activite`,`Date`,`Id_choriste`) values('$activite','$dateAppel','$admin')";
+		$requete = "insert into appel(`Id_type_activite`,`Date`,`choriste_id`) values('$activite','$dateAppel','$admin')";
 		$BaseDonnee->exec($requete);
 		header("location:listeAppel.php");
 	}
